@@ -1,0 +1,45 @@
+
+body {
+    height: 100em;
+}
+
+main {
+    display: flex;
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid black;    
+}
+
+.left {
+    float: left;
+    background-color: rgb(25, 120, 243);
+    width: 50%;    
+}
+
+.photo {   
+    width: 6em;
+    height: 6em;    
+    border-radius: 50%;
+    padding-left: 10px;
+    padding-top: 10px;
+    
+    
+}
+
+@media screen and (min-width: 40em) {
+    main {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    main {
+      width: calc((100% - 1rem) / 2);
+    }
+  }
+  
+  @media screen and (min-width: 60em) {
+    main {
+      width: calc((100% - 2rem) / 3);
+    }
+  }
